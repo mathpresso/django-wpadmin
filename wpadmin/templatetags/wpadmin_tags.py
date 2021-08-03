@@ -13,7 +13,7 @@ def wpadmin_render_custom_style(context):
         .get('custom_style', None)
     if custom_style_path:
         return mark_safe('<link type="text/css" rel="stylesheet" href="%s" />' \
-                         % custom_style_path % custom_style_path)
+                         % custom_style_path)
     else:
         return ''
 
